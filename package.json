@@ -1,0 +1,27 @@
+{
+  "name": "pre-wear",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc && npm run build:cp-public",
+    "build:cp-public": "cp -r public/* dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/som-syom/pre-wear.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/som-syom/pre-wear/issues"
+  },
+  "homepage": "https://github.com/som-syom/pre-wear#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.6.4"
+  }
+}
