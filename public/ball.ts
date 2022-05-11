@@ -17,8 +17,8 @@ export class Ball {
     this.vy = speed;
 
     const diameter = radius * 2;
-    this.x = Math.floor(Math.random() * WIDTH - diameter * 2) + diameter;
-    this.y = Math.floor(Math.random() * HEIGHT - diameter * 2) + diameter;
+    this.x = Math.floor(Math.random() * (WIDTH - diameter * 2)) + diameter * 2;
+    this.y = Math.floor(Math.random() * (HEIGHT - diameter * 2)) + diameter * 2;
   }
 
   draw(ctx: CanvasRenderingContext2D) {
