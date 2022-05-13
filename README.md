@@ -30,10 +30,10 @@ cd pre-wear
 npm install
 ```
 
-4. 빌드
+4. 실행
 
 ```
-npm run build
+npm run start
 ```
 
-5. dist 폴더 내 index.html 실행
+5. `localhost:1234` 로 접속
