@@ -72,8 +72,8 @@ export class Balls {
   status: BallStatus[] = [];
   constructor(num: number) {
     for (let i = 0; i < num; i++) {
-      const radius = Math.floor(Math.random() * 13) + 10;
-      const speed = Math.floor(Math.random() * 2) + 0.5;
+      const radius = Math.floor(Math.random() * 20) + 10;
+      const speed = Math.floor(Math.random() * 4) + 2;
       const newItem = new Ball(radius, speed);
       while (this.checkSamePos(newItem)) {
         newItem.setPos({
