@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsc -w",
-    "build": "tsc && npm run build:cp-public",
+    "start": "parcel public/index.html",
     "build:cp-public": "cp -r public/* dist/"
   },
   "repository": {
@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/som-syom/pre-wear#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5",
     "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
   }
 }
