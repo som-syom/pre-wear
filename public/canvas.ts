@@ -12,7 +12,7 @@ class Canvas {
     this.canvas.width = 1000;
     this.canvas.height = 500;
 
-    this.ball = new Balls(5);
+    this.ball = new Balls(20);
 
     const container = document.getElementById("container");
     if (container) container.appendChild(this.canvas);
