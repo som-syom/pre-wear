@@ -1,6 +1,6 @@
 # WE-AR Front-end 사전 과제
 
-[배포 사이트 링크]()
+[배포 사이트 링크](http://wear-som-syom.s3-website.ap-northeast-2.amazonaws.com/)
 
 ## 구현한 것
 
