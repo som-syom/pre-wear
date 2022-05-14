@@ -154,9 +154,21 @@ export class Balls {
         y: Math.sin(angle + direction2) * speed2,
       };
 
-      if (isSameDir(newDir1, newDir2)) {
-        newDir1 = { x: newDir1.x, y: newDir1.y };
-        newDir2 = { x: -newDir2.x, y: -newDir2.y };
+      // if (isSameDir(newDir1, newDir2)) {
+      //   newDir1 = { x: newDir1.x, y: newDir1.y };
+      //   newDir2 = { x: -newDir2.x, y: -newDir2.y };
+      // }
+
+      if (deltaX > 0) {
+        newDir2.x *= -1;
+      } else {
+        newDir1.x *= -1;
+      }
+
+      if (deltaY > 0) {
+        newDir2.y *= -1;
+      } else {
+        newDir1.y *= -1;
       }
 
       ball1.setDir(newDir1);
